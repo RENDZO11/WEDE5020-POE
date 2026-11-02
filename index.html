@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanNest | indexs to Rent and Buy in Johannesburg, Pretoria, Cape Town and Durban</title>
+  <meta name="description" content="UrbanNest lists indexs to rent and buy across Johannesburg, Pretoria, Cape Town and Durban. Search by city, suburb, price, bedrooms and property type, then enquire about a viewing.">
+  <meta name="keywords" content="indexs to rent Johannesburg, houses for sale Pretoria, apartments for rent Cape Town, property for sale Durban, UrbanNest, urban property South Africa">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/urbannest_cover_page.png" alt="UrbanNest logo" class="logo">
+      <span class="brand-name">UrbanNest</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="index.html" class="is-current" aria-current="page">index</a>
+      <a href="products-and-services.html">Properties</a>
+      <a href="about-us.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="news-and-updates.html">News</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="contact-us.html">Contact</a>
+    </nav>
+    <a href="products-and-services.html" class="btn btn-cta">Find a home</a>
+  </header>
+
+  <main>
+
+    <!-- Hero + search -->
+    <section class="index-hero">
+      <div class="wrap">
+        <h1>Find a home to rent or buy</h1>
+        <p>Browse 60 homes to rent, buy or view as new developments across Johannesburg, Pretoria, Cape Town and Durban, with the price shown on every listing.</p>
+
+        <form class="index-search" action="products-and-services.html" method="get">
+          <div class="index-search-fields">
+
+            <div class="search-field">
+              <label for="h-cat">Looking to</label>
+              <select id="h-cat" name="category">
+                <option value="buy">Buy</option>
+                <option value="rent">Rent</option>
+                <option value="development">New development</option>
+                <option value="all">Any</option>
+              </select>
+            </div>
+
+            <div class="search-field">
+              <label for="h-q">City or Suburb</label>
+              <input type="search" id="h-q" name="q" list="suburb-list" placeholder="e.g. Sandton">
+              <datalist id="suburb-list">
+                <option value="Johannesburg"><option value="Pretoria"><option value="Cape Town"><option value="Durban"><option value="Rosebank"><option value="Sandton">
+                <option value="Melrose"><option value="Bryanston"><option value="Parkhurst"><option value="Menlyn"><option value="Waterkloof"><option value="Hatfield">
+                <option value="Centurion"><option value="Lynnwood"><option value="Sea Point"><option value="Claremont"><option value="Century City"><option value="Camps Bay">
+                <option value="Observatory"><option value="Umhlanga"><option value="Morningside"><option value="Ballito"><option value="Berea"><option value="Westville">
+                <option value="Greenside"><option value="Fourways"><option value="Linden"><option value="Randburg"><option value="Maboneng"><option value="Brooklyn">
+                <option value="Garsfontein"><option value="Sunnyside"><option value="Moreleta Park"><option value="Arcadia"><option value="Green Point"><option value="Rondebosch">
+                <option value="Gardens"><option value="Tamboerskloof"><option value="Woodstock"><option value="Glenwood"><option value="Kloof"><option value="Musgrave">
+                <option value="Durban North"><option value="Umbilo"><option value="Braamfontein"><option value="Illovo"><option value="Northcliff"><option value="Midrand">
+                <option value="Waterfall"><option value="Montana"><option value="Irene"><option value="Equestria"><option value="Faerie Glen"><option value="Silver Lakes">
+                <option value="Table View"><option value="Newlands"><option value="Bellville"><option value="Constantia"><option value="Milnerton"><option value="La Lucia">
+                <option value="Hillcrest"><option value="Umdloti"><option value="Mount Edgecombe"><option value="Amanzimtoti">
+              </datalist>
+            </div>
+
+            <div class="search-field">
+              <label for="h-type">Property Type</label>
+              <select id="h-type" name="type">
+                <option value="">All Types</option>
+                <option value="apartment">Apartment</option>
+                <option value="studio">Studio</option>
+                <option value="house">House</option>
+                <option value="townhouse">Townhouse</option>
+              </select>
+            </div>
+
+            <div class="search-field">
+              <label for="h-min">Min Price (R)</label>
+              <input type="number" id="h-min" name="min" min="0" step="100" placeholder="0">
+            </div>
+
+            <div class="search-field">
+              <label for="h-max">Max Price (R)</label>
+              <input type="number" id="h-max" name="max" min="0" step="100" placeholder="Any">
+            </div>
+
+            <div class="search-field">
+              <label for="h-beds">Bedrooms</label>
+              <select id="h-beds" name="beds">
+                <option value="">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+              </select>
+            </div>
+
+          </div>
+          <button type="submit" class="btn btn-cta">Search Properties</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Featured properties (same listings as the Properties page) -->
+    <section class="section">
+      <div class="wrap">
+        <div class="featured-head">
+          <div>
+            <h2>Featured Properties</h2>
+            <p>Three homes from the current list, with the price exactly as it appears on the listing.</p>
+          </div>
+          <a href="products-and-services.html" class="link-arrow">View all 60 properties</a>
+        </div>
+
+        <div class="card-grid">
+
+          <a class="property-card" href="products-and-services.html?category=buy&amp;q=Bryanston%20Grove">
+            <div class="property-media">
+              <img src="images/properties/bryanston-grove-1.jpg" alt="Bryanston Grove, a four-bedroom house in Johannesburg" loading="lazy">
+              <div class="badge-row">
+                <span class="badge badge-sale">For Sale</span>
+                <span class="badge badge-accent">House</span>
+              </div>
+              <span class="price-pill">R4 850 000</span>
+            </div>
+            <div class="property-body">
+              <h3>Bryanston Grove</h3>
+              <p class="property-loc">Bryanston, Johannesburg</p>
+              <div class="property-meta">
+                <span class="meta-item">4 Bed</span>
+                <span class="meta-item">3 Bath</span>
+                <span class="meta-item">320 m&sup2;</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="property-card" href="products-and-services.html?category=rent&amp;q=Fourways%20Square">
+            <div class="property-media">
+              <img src="images/properties/fourways-square-1.jpg" alt="Fourways Square, a two-bedroom apartment to rent in Johannesburg" loading="lazy">
+              <div class="badge-row">
+                <span class="badge badge-sale">To Rent</span>
+                <span class="badge badge-accent">Apartment</span>
+              </div>
+              <span class="price-pill">R16 500 p/m</span>
+            </div>
+            <div class="property-body">
+              <h3>Fourways Square</h3>
+              <p class="property-loc">Fourways, Johannesburg</p>
+              <div class="property-meta">
+                <span class="meta-item">2 Bed</span>
+                <span class="meta-item">2 Bath</span>
+                <span class="meta-item">88 m&sup2;</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="property-card" href="products-and-services.html?category=development&amp;q=Table%20View%20Residences">
+            <div class="property-media">
+              <img src="images/properties/table-view-residences-1.jpg" alt="Table View Residences, a new apartment development in Cape Town" loading="lazy">
+              <div class="badge-row">
+                <span class="badge badge-sale">Development</span>
+                <span class="badge badge-accent">Apartment</span>
+              </div>
+              <span class="price-pill">From R3 600 000</span>
+            </div>
+            <div class="property-body">
+              <h3>Table View Residences</h3>
+              <p class="property-loc">Table View, Cape Town</p>
+              <div class="property-meta">
+                <span class="meta-item">2 Bed</span>
+                <span class="meta-item">2 Bath</span>
+                <span class="meta-item">88 m&sup2;</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do -->
+    <section class="section section-tint">
+      <div class="wrap">
+        <div class="featured-head">
+          <div>
+            <h2>Renting, Buying and Developments</h2>
+            <p>UrbanNest works on both sides of the market. Rentals, sales and development units are listed together on one page.</p>
+          </div>
+        </div>
+
+        <div class="index-tiles">
+
+          <article class="info-card">
+            <span class="info-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 10.5 12 3l9 7.5"/>
+                <path d="M5 9.5V21h14V9.5"/>
+              </svg>
+            </span>
+            <div>
+              <h3>homes to rent</h3>
+              <p>Apartments, studios, townhouses and houses, each showing the monthly rent and the deposit terms.</p>
+              <a href="products-and-services.html?category=rent" class="link-arrow">Browse rentals</a>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <span class="info-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2v20"/>
+                <path d="M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </span>
+            <div>
+              <h3>homes to buy</h3>
+              <p>Houses, apartments and townhouses for sale, from entry-level units to larger family homes.</p>
+              <a href="products-and-services.html?category=buy" class="link-arrow">Browse properties for sale</a>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <span class="info-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 21h18"/>
+                <path d="M5 21V7l7-4 7 4v14"/>
+                <path d="M10 21v-5h4v5"/>
+              </svg>
+            </span>
+            <div>
+              <h3>Developments</h3>
+              <p>New unit releases listed with the same detail as individual properties, including the build stage.</p>
+              <a href="products-and-services.html?category=development" class="link-arrow">See developments</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section">
+      <div class="wrap">
+        <div class="featured-head">
+          <div>
+            <h2>How It Works</h2>
+            <p>Four steps from browsing to keys, whether you are renting or buying.</p>
+          </div>
+        </div>
+
+        <div class="index-tiles">
+          <article class="index-step">
+            <span class="step-num">1</span>
+            <h3>Search the listings</h3>
+            <p>Filter by city, suburb, property type, price, bedrooms, bathrooms and floor size.</p>
+          </article>
+          <article class="index-step">
+            <span class="step-num">2</span>
+            <h3>Send an enquiry</h3>
+            <p>Enquire from the listing or the enquiry page and we confirm availability and costs.</p>
+          </article>
+          <article class="index-step">
+            <span class="step-num">3</span>
+            <h3>Book a viewing</h3>
+            <p>Choose a date that suits you and we confirm the time with the owner or tenant.</p>
+          </article>
+          <article class="index-step">
+            <span class="step-num">4</span>
+            <h3>Sign and move in</h3>
+            <p>We explain every clause before you sign the lease or the offer to purchase.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="index-cta">
+      <div class="wrap">
+        <h2>Not sure where to start?</h2>
+        <p>Tell us what you are looking for and we will send you the listings that match.</p>
+        <div class="index-cta-actions">
+          <a href="products-and-services.html" class="btn btn-cta">Browse All Properties</a>
+          <a href="enquiry.html" class="btn btn-ghost">Make an Enquiry</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="images/urbannest_cover_page.png" alt="UrbanNest logo" class="logo">
+          <span>UrbanNest</span>
+        </div>
+        <p>Your trusted partner for premium urban property across South Africa's major cities.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-list">
+          <li><a href="products-and-services.html">Browse Properties</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="enquiry.html">Make an Enquiry</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Cities</h4>
+        <ul class="footer-list">
+          <li><span>Johannesburg</span></li>
+          <li><span>Pretoria</span></li>
+          <li><span>Cape Town</span></li>
+          <li><span>Durban</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul class="footer-list">
+          <li><a href="tel:0117824410">0634373969</a></li>
+          <li><a href="mailto:rendzorikhotso16@gmail.com">rendzorikhotso16@gmail.com</a></li>
+          <li><span>14 Millbrook Avenue, Riverside District</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; ST10510131 &middot; UrbanNest. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="Js/script.js"></script>
+</body>
+</html>

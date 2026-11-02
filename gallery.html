@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Gallery | UrbanNest</title>
+  <meta name="description" content="Browse photographs of UrbanNest apartments, houses, studios and cottages. Click any image to view it full screen.">
+  <meta name="keywords" content="property photos South Africa, apartment gallery, house interiors, UrbanNest gallery">
+  <link rel="stylesheet" href="css/style.css?v=20261012">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="images/urbannest_cover_page.png" alt="UrbanNest logo" class="logo">
+      <span class="brand-name">UrbanNest</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="index.html">index</a>
+      <a href="products-and-services.html">Properties</a>
+      <a href="about-us.html">About</a>
+      <a href="gallery.html" class="is-current" aria-current="page">Gallery</a>
+      <a href="news-and-updates.html">News</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="contact-us.html">Contact</a>
+    </nav>
+    <a href="products-and-services.html" class="btn btn-cta">Find a home</a>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <h1>Property Gallery</h1>
+      <p>Interiors, kitchens, bedrooms and exteriors from properties across our four cities. Click any photo to see it full screen.</p>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2 class="sr-only">Photo gallery</h2>
+
+        <div class="gallery-filters" data-gallery-filters>
+          <button type="button" class="filter-pill is-active" data-filter="" aria-pressed="true">All Photos</button>
+          <button type="button" class="filter-pill" data-filter="living" aria-pressed="false">Living Areas</button>
+          <button type="button" class="filter-pill" data-filter="kitchen" aria-pressed="false">Kitchens</button>
+          <button type="button" class="filter-pill" data-filter="bedroom" aria-pressed="false">Bedrooms</button>
+          <button type="button" class="filter-pill" data-filter="exterior" aria-pressed="false">Exteriors</button>
+        </div>
+
+        <!-- Each tile loads images/NAME.jpg. If a tile is broken, that file name is not in your images folder. -->
+        <div class="gallery-grid" data-gallery-grid>
+
+          <figure class="gallery-item" data-category="living">
+            <a href="images/properties/melrose-court-5.jpg" data-lightbox data-caption="Open-plan living area with a grey sofa and timber flooring">
+              <img src="images/properties/melrose-court-5.jpg" alt="Open-plan living area with a grey sofa, coffee table and timber flooring" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Open-plan living area</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="living">
+            <a href="images/properties/waterkloof-ridge-30.jpg" data-lightbox data-caption="Lounge with large windows and a reading corner">
+              <img src="images/properties/waterkloof-ridge-30.jpg" alt="Lounge with large windows and a reading corner beside a bookshelf" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Lounge with reading corner</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="kitchen">
+            <a href="images/Modern kitchen.jpg" data-lightbox data-caption="Modern kitchen with a centre island and built-in oven">
+              <img src="images/Modern kitchen.jpg" alt="Modern kitchen with a centre island, built-in oven and white cabinetry" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Kitchen with centre island</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="kitchen">
+            <a href="images/Compact.jpg" data-lightbox data-caption="Compact galley kitchen in a studio apartment">
+              <img src="images/Compact.jpg" alt="Compact galley kitchen in a studio apartment with two-plate stove" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Galley kitchen</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="bedroom">
+            <a href="images/properties/parkhurst-mews-18.jpg" data-lightbox data-caption="Main bedroom with built-in cupboards and an en-suite door">
+              <img src="images/properties/parkhurst-mews-18.jpg" alt="Main bedroom with built-in cupboards, a double bed and a door to an en-suite bathroom" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Main bedroom</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="bedroom">
+            <a href="images/properties/waterkloof-ridge-17.jpg" data-lightbox data-caption="Second bedroom used as a study">
+              <img src="images/properties/waterkloof-ridge-17.jpg" alt="Second bedroom with a desk and chair used as a index study" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Second bedroom or study</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="exterior">
+            <a href="images/properties/randburg-manor-1.jpg" data-lightbox data-caption="Face-brick townhouse with a paved driveway">
+              <img src="images/properties/randburg-manor-1.jpg" alt="Face-brick townhouse with a paved driveway and a low front wall" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Townhouse exterior</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="exterior">
+            <a href="images/properties/greenside-loft-1.jpg" data-lightbox data-caption="Apartment block with a shared garden and parking bay">
+              <img src="images/properties/greenside-loft-1.jpg" alt="Apartment block with a shared garden and a marked parking bay in front" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Apartment block</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="exterior">
+            <a href="images/Cottage.jpg" data-lightbox data-caption="Cottage with a covered stoep and garden">
+              <img src="images/Cottage.jpg" alt="Cottage with a covered stoep, garden chairs and a lawn" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Cottage with stoep</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="living">
+            <a href="images/Dining Area.jpg" data-lightbox data-caption="Dining area opening onto a balcony">
+              <img src="images/Dining Area.jpg" alt="Dining area with a four-seater table opening onto a balcony" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Dining area</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="bedroom">
+            <a href="images/Guest Bedroom.jpg" data-lightbox data-caption="Guest bedroom with a single bed and wardrobe">
+              <img src="images/Guest Bedroom.jpg" alt="Guest bedroom with a single bed, bedside table and freestanding wardrobe" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Guest bedroom</figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-category="exterior">
+            <a href="images/complex entrance.jpg" data-lightbox data-caption="Complex entrance with visitor parking">
+              <img src="images/complex entrance.jpg" alt="Secure complex entrance with boom gate and visitor parking bays" loading="lazy" decoding="async">
+            </a>
+            <figcaption>Complex entrance</figcaption>
+          </figure>
+
+        </div>
+
+        <p class="gallery-note">Every photograph shown is a sample image used while this website is being built.</p>
+
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>Like what you see?</h2>
+        <p>Browse the full list of properties to rent and buy, or send us an enquiry.</p>
+        <div class="cta-actions">
+          <a href="products-and-services.html" class="btn btn-cta">Browse Properties</a>
+          <a href="enquiry.html" class="btn btn-ghost">Make an Enquiry</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="images/urbannest_cover_page.png" alt="UrbanNest logo" class="logo">
+          <span>UrbanNest</span>
+        </div>
+        <p>Your trusted partner for premium urban property across South Africa's major cities.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-list">
+          <li><a href="products-and-services.html">Browse Properties</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="enquiry.html">Make an Enquiry</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Cities</h4>
+        <ul class="footer-list">
+          <li><span>Johannesburg</span></li>
+          <li><span>Pretoria</span></li>
+          <li><span>Cape Town</span></li>
+          <li><span>Durban</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul class="footer-list">
+          <li><a href="tel:0117824410">0634373969</a></li>
+          <li><a href="mailto:rendzorikhotso16@gmail.com">rendzorikhotso16@gmail.com</a></li>
+          <li><span>14 Millbrook Avenue, Riverside District</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; ST10510131 &middot; UrbanNest. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="Js/script.js?v=20261012"></script>
+</body>
+</html>
